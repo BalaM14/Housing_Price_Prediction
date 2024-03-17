@@ -2,9 +2,10 @@ import logging
 from datetime import datetime
 import os
 
-LOG_DIR="housing_logs"
+CURRENT_DATE = f"{datetime.now().strftime('%Y_%m_%d')}"
+CURRENT_TIMESTAMP=f"{datetime.now().strftime('%Y_%m_%d_%H_%M_%S')}"
 
-CURRENT_TIMESTAMP=f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
+LOG_DIR=os.path.join("housing_logs",CURRENT_DATE)
 
 LOG_FILE=f"log_{CURRENT_TIMESTAMP}.log"
 
