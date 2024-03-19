@@ -4,4 +4,5 @@ gunicorn
 scikit-learn
 pandas
 PyYAML
+evidently
 -e .
