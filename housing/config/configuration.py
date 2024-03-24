@@ -50,15 +50,15 @@ class Configuration:
             data_validation_info=self.config_info[DATA_VALIDATION_CONFIG_KEY]
             data_validation_artifact_dir=os.path.join(artifact_dir,DATA_VALIDATION_ARTIFACT_DIR,self.time_stamp)
             schema_dir=os.path.join(data_validation_artifact_dir,data_validation_info[DATA_VALIDATION_SCHEMA_DIR_KEY])
-            schema_file_name=os.path.join(schema_dir,data_validation_info[DATA_VALIDATION_SCHEMA_FILE_NAME_KEY])
-            report_file_name=os.path.join(data_validation_artifact_dir,data_validation_info[DATA_VALIDATION_REPORT_FILE_NAME_KEY])
-            report_page_file_name=os.path.join(data_validation_artifact_dir,data_validation_info[DATA_VALIDATION_REPORT_PAGE_FILE_NAME_KEY])
+            schema_file_path=os.path.join(schema_dir,data_validation_info[DATA_VALIDATION_SCHEMA_FILE_NAME_KEY])
+            report_file_path=os.path.join(data_validation_artifact_dir,data_validation_info[DATA_VALIDATION_REPORT_FILE_NAME_KEY])
+            report_page_file_path=os.path.join(data_validation_artifact_dir,data_validation_info[DATA_VALIDATION_REPORT_PAGE_FILE_NAME_KEY])
             
             data_validation_config=DataValidationConfig(
                 schema_dir=schema_dir,
-                schema_file_name=schema_file_name,
-                report_file_name=report_file_name,
-                report_page_file_name=report_page_file_name
+                schema_file_path=schema_file_path,
+                report_file_path=report_file_path,
+                report_page_file_path=report_page_file_path
             )
             logging.info(f"Data Validation Config: {data_validation_config}")
             return data_validation_config
