@@ -99,6 +99,13 @@ class DataValidation:
             dashboard = Dashboard(tabs=[DataDriftTab()])
             train_df,test_df=self.get_train_test_df()
             dashboard.calculate(train_df,test_df)
+
+            report_page_file_path = self.data_validation_config.report_page_file_path
+
+            report_page_dir = os.path.dirname(report_page_file_path)
+
+            os.makedirs(report_page_dir,exist_ok=True)
+
             dashboard.save(self.data_validation_config.report_page_file_path)
             
         except Exception as e:
