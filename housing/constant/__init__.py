@@ -60,3 +60,16 @@ MODEL_PUSHER_EXPORT_DIR_KEY="model_export_dir"
 TRAINING_PIPELINE_CONFIG_KEY="training_pipeline_config"
 TRAINING_PIPELINE_ARTIFACT_DIR_KEY="artifact_dir"
 TRAINING_PIPELINE_NAME_KEY="pipeline_name"
+
+
+COLUMN_TOTAL_ROOMS="total_rooms"
+COLUMN_POPULATION="population"
+COLUMN_HOUSEHOLDS="households"
+COLUMN_TOTAL_BEDROOM="total_bedrooms"
+DATASET_SCHEMA_COLUMNS_KEY="columns"
+
+NUMERICAL_COLUMN_KEY="numerical_columns"
+
+CATEGORICAL_COLUMN_KEY="categorical_columns"
+
+TARGET_COLUMN_KEY="target_column"

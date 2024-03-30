@@ -66,6 +66,7 @@ class DataValidation:
     def validate_dataset_schema(self) -> bool:
         try:
             validation_status=False
+            #Write the code to validate the dataset 
 
             return validation_status
 
@@ -137,6 +138,8 @@ class DataValidation:
                 message="Data Validation performed successfully."
             )
             logging.info(f"Data Validation artifact : {data_validation_artifact}")
+
+            return data_validation_artifact
             
         except Exception as e:
             raise HousingException(e,sys) from e

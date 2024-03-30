@@ -39,7 +39,7 @@ Step6	: 	upload all the updates & changes into the git repo by using
 			# git status				-> To view the status of the files
 			# git log					-> To view the logs of the git cmnd executed
 			# git commit -m "message"	-> To commit all the changes to the repo
-			# git push origin main 		-> To psuh the changes into the git repo & make them available in github
+			# git push origin main 		-> To push the changes into the git repo & make them available in github
 			# git remote -v				-> To check the remote Url pointing for push/fetch commands
 			# git branch				-> To view the branch name
 			# git diff					-> To see the difference b/w the previous commit and new changes
