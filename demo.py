@@ -7,7 +7,8 @@ warnings.filterwarnings('ignore')
 def main():
     try:
         pipeline=Pipeline()
-        pipeline.run_pipeline()
+        pipeline.start()
+        logging.info(f"Main function execution completed successfully")
         #data_transformation_config = Configuration().get_data_transformation_config()
         #print(data_transformation_config)
     except Exception as e:

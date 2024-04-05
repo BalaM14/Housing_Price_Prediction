@@ -6,6 +6,7 @@ from housing.entity.config_entity import DataIngestionConfig
 from housing.component.data_ingestion import DataIngestion
 from housing.component.data_validation import DataValidation
 from housing.component.data_transformation import DataTransformation
+from housing.component.model_trainer import Mode
 import os,sys
 
 
@@ -47,7 +48,9 @@ class Pipeline:
             return data_transfrmation.initiate_data_transformation()
         except Exception as e:
             raise HousingException(e,sys) from e
-    def start_model_trainer(self):
+    def start_model_trainer(self,data_transformation_artifact: DataTransformationArtifact) :
+        try:
+            model_trainer = Mo
         pass
     def start_model_valuation(self):
         pass
