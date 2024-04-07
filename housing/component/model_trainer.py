@@ -4,7 +4,7 @@ import sys
 from housing.logger import logging
 from typing import List
 from housing.entity.artifact_entity import DataTransformationArtifact, ModelTrainerArtifact
-from housing.entity.config_entity import ModelTrainingConfig
+from housing.entity.config_entity import ModelTrainerConfig
 from housing.util.util import load_numpy_array_data,save_object,load_object
 from housing.entity.model_factory import MetricInfoArtifact, ModelFactory,GridSearchedBestModel
 from housing.entity.model_factory import evaluate_regression_model
@@ -41,7 +41,7 @@ class HousingEstimatorModel:
 
 class ModelTrainer:
 
-    def __init__(self, model_trainer_config:ModelTrainingConfig, data_transformation_artifact: DataTransformationArtifact):
+    def __init__(self, model_trainer_config:ModelTrainerConfig, data_transformation_artifact: DataTransformationArtifact):
         try:
             logging.info(f"{'>>' * 30}Model trainer log started.{'<<' * 30} ")
             self.model_trainer_config = model_trainer_config

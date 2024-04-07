@@ -144,6 +144,7 @@ class DataTransformation:
         except Exception as e:
             raise HousingException(e,sys) from e   
 
+
     def initiate_data_transformation(self)->DataTransformationArtifact:
         try:
             logging.info(f"Obtaining preprocessing object.")
@@ -176,7 +177,7 @@ class DataTransformation:
             
 
             logging.info(f"Applying preprocessing object on training dataframe and testing dataframe")
-            input_feature_train_arr = preprocessing_obj.fit_transform(input_feature_train_df)
+            input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr = preprocessing_obj.transform(input_feature_test_df)
 
 
