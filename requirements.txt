@@ -1,10 +1,10 @@
-numpy
+numpy==1.26
 Flask
 gunicorn
-sklearn
+scikit-learn
 pandas
 PyYAML
-evidently
+evidently==0.2.8
 dill
 matplotlib
 -e .
