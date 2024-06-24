@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import os
 
-latest_model_file_path = "model.pkl"
+latest_model_file_path = "Streamlit_Prediction_API/model.pkl"
 
 
 model = pickle.load(open(latest_model_file_path,"rb"))
