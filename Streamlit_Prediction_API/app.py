@@ -3,17 +3,7 @@ import pandas as pd
 import pickle
 import os
 
-
-def get_latest_model_path(model_dir):
-        folder_name = list(map(int, os.listdir(model_dir)))
-        latest_model_dir = os.path.join(model_dir, f"{max(folder_name)}")
-        file_name = os.listdir(latest_model_dir)[0]
-        latest_model_path = os.path.join(latest_model_dir, file_name)
-        return latest_model_path
-
-
-
-latest_model_file_path = get_latest_model_path("..\saved_models")
+latest_model_file_path = "model.pkl"
 
 
 model = pickle.load(open(latest_model_file_path,"rb"))
@@ -24,7 +14,7 @@ if uploaded_file is not None:
     st.write("Input Features:")
     st.dataframe(data.head())
 
-    
+
     data['Predicted_Price'] = model.predict(data)
 
     st.write("Output Predicted Features:")

@@ -32,6 +32,11 @@ class ModelPusher:
             #we can call a function to save model to Azure blob storage/ google cloud strorage / s3 bucket
             logging.info(
                 f"Trained model: {evaluated_model_file_path} is copied in export dir:[{export_model_file_path}]")
+            
+            shutil.copy(src=evaluated_model_file_path, dst="Streamlit_Prediction_API")
+
+            logging.info(
+                f"Trained model: {evaluated_model_file_path} is copied in export dir:['Streamlit_Prediction_API']")
 
             model_pusher_artifact = ModelPusherArtifact(is_model_pusher=True,
                                                         export_model_file_path=export_model_file_path
