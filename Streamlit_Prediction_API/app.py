@@ -4,7 +4,7 @@ import pickle
 import os
 
 from pathlib import Path
-st.text(Path.cwd()) 
+st.text(os.getcwd()) 
 
 latest_model_file_path = "Streamlit_Prediction_API/model.pkl"
 
