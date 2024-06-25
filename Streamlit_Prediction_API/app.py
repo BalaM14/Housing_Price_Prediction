@@ -19,11 +19,7 @@ Mail ID: balamurugan141196@gmail.com
 import numpy as np
 import pickle
 import pandas as pd
-
 import streamlit as st 
-
-from PIL import Image
-
 
 
 pickle_in = open("Streamlit_Prediction_API/model.pkl","rb")
@@ -89,6 +85,3 @@ def main():
 
 if __name__=='__main__':
     main()
-    
-    
-    
