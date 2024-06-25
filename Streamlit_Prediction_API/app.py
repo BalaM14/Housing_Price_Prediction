@@ -19,13 +19,12 @@ Mail ID: balamurugan141196@gmail.com
 import numpy as np
 import pickle
 import pandas as pd
-#from flasgger import Swagger
+
 import streamlit as st 
 
 from PIL import Image
 
-#app=Flask(__name__)
-#Swagger(app)
+
 
 pickle_in = open("Streamlit_Prediction_API/model.pkl","rb")
 regressor=pickle.load(pickle_in)
