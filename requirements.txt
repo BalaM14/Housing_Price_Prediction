@@ -8,4 +8,6 @@ evidently==0.2.8
 dill
 matplotlib
 streamlit
+pandas
+joblib
 -e .
