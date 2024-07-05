@@ -1,26 +1,14 @@
-# -*- coding: utf-8 -*-
-"""
-Created on 25-06-2024
-
-@author: Bala Murugan
-
-Mail ID: balamurugan141196@gmail.com
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on 25-06-2024
-
-@author: Bala Murugan
-
-Mail ID: balamurugan141196@gmail.com
-"""
-
 import numpy as np
 import pickle
 import pandas as pd
 import streamlit as st 
 
+"""
+### Created By : Bala Murugan
+#### LinkedIn : https://www.linkedin.com/in/balamurugan14/
+
+# House Price Prediction
+"""
 
 pickle_in = open("Streamlit_Prediction_API/model.pkl","rb")
 regressor=pickle.load(pickle_in)
